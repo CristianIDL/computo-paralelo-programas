@@ -32,4 +32,17 @@ _A un compañero y a mi nos salió mal uno de los padres, a lo que el profesor m
 
 Tras un rato de meditar el profe llegó a una conclusión.
 
-> Seguramente en algún momento les llegue a pasar a todos
+> Seguramente en algún momento les llegue a pasar a todos. Usando `sleep();`
+
+El padre tiene su padre, pero [[Linux]] es un sistema muy jerárquico y parternalista. EL 8 de marzo deberían haber estado todas en contra de Linux, no hay procesos Madre.
+
+Lo que pasaba era que el padre se muere, dejando huérfano al hijo por un instante, por lo que otro padre lo adopta.
+
+## Revisar los procesos
+
+Al ejecutar el código de `Hijos1.c`, e inmediatamente poner `ps -fea` se puede ver la lista de procesos, la cual mostrará los procesos que hemos generado.
+
+```
+cristia+    9348    7527  0 17:38 pts/1    00:00:00 ./Hijos1
+cristia+    9349    9348  0 17:38 pts/1    00:00:00 ./Hijos1
+```
