@@ -1,0 +1,35 @@
+# Instalación
+
+```
+sudo apt install openmpi-bin
+sudo apt install libopenmpi-dbg
+sudo apt install libopenmpi-dev
+```
+
+`mpirun -np 5 HolaMundo1`
+
+Descubrí que tengo 10 núcleos waos.
+
+> MPI es no estandar, como ya vieron. Una vez instalado podemos agregar la librería.
+
+A partid de este punto todos los núcleos se ponen a trabajar.
+
+```
+int numero_procesos;
+int identificador;
+MPI_Init(&argc, &argv);
+MPI_Comm_size(MPI_COMM_WORLD, &numero_procesos);
+MPI_Comm_rank(MPI_COMM_WORLD, &identificador);
+```
+
+`MPI_Finalize();` duerme todo.
+
+## Explicación
+
+Volviendo a la línea de ejecución:
+
+Al introducir este comando estamos proporcionando los argumentos `mpirun -np 5 HolaMundo1`
+
+# Fin de la clase
+
+> Para qué se diviertan.
